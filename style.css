@@ -32,6 +32,11 @@ h1 {
 
 .buttons {
     margin-top: 20px;
+    margin-top: 20px;
+    display: flex;         /* Turns on the layout engine */
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px;            /* This is the magic gap! */
+    position: relative;    /* Creates a "fence" for the No button */
 }
 
 button {
@@ -52,6 +57,6 @@ button {
 #noButton {
     background-color: #f44336;
     color: white;
-    position: absolute; /* Needed for the "run away" effect */
+    position: relative; /* Needed for the "run away" effect */
     font-family: 'Amatic SC', cursive;
 }
